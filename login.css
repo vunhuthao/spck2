@@ -1,5 +1,9 @@
+/*khác*/
+#s{
+    color:white;
+}
 .nav{
-    background-color:rgb(245, 245, 245) ;
+    background-color:rgb(240, 198, 198);
     padding: 20px;
     margin-top:0px;
     /*width:1300px;*/
@@ -18,3 +22,18 @@ body{
 .nav-item:hover{
     background-color:antiquewhite ;
 }
+body{
+    background-image: url("https://img3.thuthuatphanmem.vn/uploads/2019/09/17/nen-background-tet-hoa-dao_105958650.png");
+}
+/*form*/
+.form{
+    border: solid red 3px;
+    background-color: white;
+    margin-left: 40px;
+    width: 600px;
+    text-align: center;
+}
+.input{
+    display:flex;
+}
+
