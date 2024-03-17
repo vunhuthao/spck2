@@ -1,0 +1,154 @@
+.nav{
+    background-color:rgb(245, 245, 245) ;
+    padding: 20px;
+    margin-top:0px;
+    /*width:1300px;*/
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+body{
+    margin:0px;
+}
+.nav-item{
+    text-decoration: none; 
+    font-size: 19px; 
+    margin-right: 40px;
+    padding: 20px;
+}
+.nav-item:hover{
+    background-color:antiquewhite ;
+}
+/*start*/
+.start{
+    background-color: rgb(255, 112, 112);
+    height: 140px;
+}
+.start h1{
+    text-align: center;
+    color: rgb(250, 177, 155);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.div2{
+    border:red 3px solid;
+    border-radius: 3px;
+    width: 1200px;
+    height: 500px;
+    margin:auto;
+    display: flex;
+    margin-top: 10px;
+    
+}
+#div2_1{
+    border: blue solid 3px;
+    width: 400px;
+    height: 400px;
+    margin-left: 60px;
+    border-style: dashed;
+    margin-top: 40px;
+}
+.div2_2{
+    width: 530px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#price{
+    color:red;
+}
+.numb{
+    display: flex;
+    flex-wrap: wrap;
+}
+.numb2{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px rgb(237, 229, 229);
+    border-radius: 1rem;
+    margin-left: 20px;
+    height: 50px;
+    width: 190px;
+}
+.BT{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: none;
+}
+.BT:hover{
+    border:solid 1px rgba(216, 117, 117, 0.721);
+}
+#p5{
+    margin-left: 30px;
+}
+.Button{
+    height: 40px;
+    width: 170px;
+    color: rgb(202, 2, 2);
+    background-color:white;
+    border: solid 3px rgb(202, 2, 2);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.Button:hover{
+    background-color: rgb(202, 2, 2);
+    color: white;
+}
+#modal-container{
+    /*height: 300px;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left:0;*/
+    position: fixed;
+    opacity:0;
+    pointer-events: none;
+}
+#modal-container.show{
+    opacity:1;
+    pointer-events: all;
+}
+#modal{
+    background-color: #fff;
+    height: 300px;
+    width: 270px;
+    margin-top: 65px;
+    margin-left: 750px;
+    margin-top: 70px;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+    border-bottom: 1px solid #dedede;
+}
+#btn-close{
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+.modal-body{
+    padding: 15px 20px;
+}
+#img1{
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+    display: flex;
+}
+#try{
+    margin-left: 60px;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border: solid 3px red;
+    color: red;
+}
+#try:hover{
+    border: solid 3px red;
+    color: white;
+    background-color: red;
+}

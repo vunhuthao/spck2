@@ -1,0 +1,66 @@
+/*khác*/
+#s{
+    color:white;
+}
+.nav{
+    background-color:rgb(240, 198, 198);
+    padding: 20px;
+    margin-top:0px;
+    /*width:1300px;*/
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+body{
+    margin:0px;
+}
+.nav-item{
+    text-decoration: none; 
+    font-size: 19px; 
+    margin-right: 40px;
+    padding: 20px;
+}
+.nav-item:hover{
+    background-color:antiquewhite ;
+}
+body{
+    background-image: url("https://img3.thuthuatphanmem.vn/uploads/2019/09/17/nen-background-tet-hoa-dao_105958650.png");
+}
+/*form*/
+.form{
+    border: solid red 3px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 570px;
+    text-align: center;
+    margin-top: 140px;
+}
+.input{
+    display:flex;
+    margin-left: 180px;
+    margin-bottom: 20px;
+    border-style: outset;
+    width: 200px;
+    height: 30px;
+}
+#Button{
+    background-color: rgb(243, 37, 37);
+    width: 140px;
+    height: 35px;
+    color: white;
+}
+#Button:hover{
+    background-color: rgb(194, 28, 28);
+}
+/*đăng xuất*/
+.B2{
+    background-color: rgb(243, 37, 37);
+    width: 140px;
+    height: 35px;
+    color: white;
+}
+#form{
+    height: 400px;
+
+}

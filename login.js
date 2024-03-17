@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAQXm4jPJlv05o4qJqc41DWDEapmddo9GE",
   authDomain: "spck-3848c.firebaseapp.com",
@@ -14,7 +15,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-const loginB = document.querySelector("#signinB");
+const loginB = document.querySelector("#Button");
 loginB.addEventListener("click", () =>{
     const email = document.querySelector("#email").value;
     const password = document.querySelector("#pass").value;
@@ -22,6 +23,7 @@ loginB.addEventListener("click", () =>{
     signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => { 
     const user = userCredential.user;
+    window.location.replace("sp.html");
   })
   .catch((error) => {
     const errorCode = error.code;

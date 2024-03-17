@@ -14,13 +14,14 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const signupB = document.querySelector("#signupB");
+const signupB = document.querySelector("#Button");
 
 signupB.addEventListener("click", () => {
     const email = document.querySelector("#email").value;
     const password = document.querySelector("#pass").value;
+    const pass2 = document.getElementById("pass2").value;
 
-
+    if (pass2==password){
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     const user = userCredential.user;
@@ -31,6 +32,8 @@ signupB.addEventListener("click", () => {
     const errorMessage = error.message;
     alert("lỗi");
   });
-
+} else {
+  alert("Vui lòng xác nhận lại mật khẩu")
+}
 })
 

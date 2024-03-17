@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Trang sản phẩm</title>
+    <link rel="stylesheet" href="1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="nav">
-        <a class="nav-item" id="acc" href="#">Trang chủ</a>
+        <a class="nav-item" id="acc" href="./index.html">Trang chủ</a>
         <a class="nav-item" href="./sp.html">Sản phẩm</a>
         <a class="nav-item" href="./cart.html">Giỏ hàng</a>
         <a class="nav-item" id="open" href="#">Tài khoản</a>
@@ -29,21 +29,34 @@
                 </div>
             </div>
         </div> 
-        <img class="img1" src="https://file.hstatic.net/1000215898/file/phong-tuc-ngay-tet-viet-nam-2_grande.jpg">
-        <p id="s">s</p>
-      <h1>Vui xuân sum vầy - quà tết đủ đầy</h1>
+    </div>
+    <div class="start">
+        <p>p</p>
+        <p>p</p>
+        <h1 id="name1"></h1>
     </div>
     <div class="div2">
-        <h1 class="h1-1">Bình luận</h1>
-        <div id="show">
-            <div id="show_1"></div>
+        <div id="div2_1">
             
         </div>
-        <div id="show_2">
-                <input class="input" type="text" id="nd" placeholder="Nhập nội dung comment">
-                <button id="addB2">Add</button>
+        <div class="div2_2">
+            <h1 id="name2"></h1>
+            <h1 id="price"></h1>
+            <input type="hidden" id="prc" value="0">
+            <h3>Thành phần:</h3>
+            <p id="nd"></p>
+            <div class="numb">
+                <p class="p1">Số lượng: </p>
+                <div class="numb2">
+                 <button id="bPlus" class="BT">+</button>
+                 <p id="p5">1</p>
+                 <input type="hidden" id="sol" name="sol" value="1">
+                 <button id="bMinus" class="BT">-</button>
+                </div>
+            </div>
+            <button id="Button" class="Button">Thêm vào giỏ hàng</button>
         </div>
     </div>
 </body>
-<script src="index.js" type="module"></script>
+<script src="1.js" type="module"></script>
 </html>
