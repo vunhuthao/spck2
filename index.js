@@ -14,7 +14,16 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const user = auth.currentUser;
+const commentshow =  document.getElementById("show_2");
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    commentshow.classList.add("show");
+  } else {
+    commentshow.classList.remove("show");
+  }
+});
 
+const open2 = document.getElementById("open2")
 const open = document.getElementById("open");
 const close = document.getElementById("btn-close");
 const modal_container =  document.getElementById("modal-container");
@@ -31,6 +40,17 @@ open.addEventListener("click",()=>{
 close.addEventListener("click",()=>{
     modal_container.classList.remove("show");
 })
+
+const modal_container_2 =  document.getElementById("modal-container-2");
+open2.addEventListener("click",()=>{
+      modal_container_2.classList.add("show");
+})
+
+document.getElementById("btn-close-2").addEventListener("click",()=>{
+  modal_container_2.classList.remove("show");
+})
+
+
 document.getElementById("try").addEventListener("click",()=>{
     signOut(auth).then(() => {
         alert("Đã đăng xuất thành công");
@@ -68,5 +88,3 @@ document.getElementById("addB2").addEventListener("click", async () => {
     alert("Nhập nội dung bình luận");
    }
 });
-
-

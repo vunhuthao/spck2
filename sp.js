@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getAuth,signOut,onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getAuth,signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { getFirestore,addDoc,collection,getDocs,onSnapshot,query } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 const firebaseConfig = {
   apiKey: "AIzaSyAQXm4jPJlv05o4qJqc41DWDEapmddo9GE",
@@ -18,15 +18,7 @@ const db = getFirestore(app);
 const q = query(collection(db, "spck"));
 
 const querySnapshot = await getDocs(q);
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    const uid = user.uid;
-  } else {
-    // User is signed out
-    // ...
-    window.location.replace("login.html");
-  }
-});
+
 
 const open = document.getElementById("open");
 const close = document.getElementById("btn-close");
@@ -82,4 +74,14 @@ onSnapshot(q, (querySnapshot) => {
       });
     });
   };
+  
+  const open2=document.getElementById("open2");
+  const modal_container_2 =  document.getElementById("modal-container-2");
+  open2.addEventListener("click",()=>{
+        modal_container_2.classList.add("show");
+  })
+  
+  document.getElementById("btn-close-2").addEventListener("click",()=>{
+    modal_container_2.classList.remove("show");
+  })
   

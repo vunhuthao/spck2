@@ -25,7 +25,7 @@ signupB.addEventListener("click", () => {
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     const user = userCredential.user;
-    alert("OK");
+    window.location.replace("login.html");
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -35,5 +35,14 @@ signupB.addEventListener("click", () => {
 } else {
   alert("Vui lòng xác nhận lại mật khẩu")
 }
+})
+const open2=document.getElementById("open2");
+const modal_container_2 =  document.getElementById("modal-container-2");
+open2.addEventListener("click",()=>{
+      modal_container_2.classList.add("show");
+})
+
+document.getElementById("btn-close-2").addEventListener("click",()=>{
+  modal_container_2.classList.remove("show");
 })
 

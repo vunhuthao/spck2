@@ -23,12 +23,22 @@ loginB.addEventListener("click", () =>{
     signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => { 
     const user = userCredential.user;
-    window.location.replace("sp.html");
+    window.location.replace("index.html");
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    alert("Sai");
+    alert("Tên đăng nhập hoặc mật khẩu không đúng");
   });
+})
+
+const open2=document.getElementById("open2");
+const modal_container_2 =  document.getElementById("modal-container-2");
+open2.addEventListener("click",()=>{
+      modal_container_2.classList.add("show");
+})
+
+document.getElementById("btn-close-2").addEventListener("click",()=>{
+  modal_container_2.classList.remove("show");
 })
 
